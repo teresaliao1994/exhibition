@@ -1,0 +1,40 @@
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+p {
+  margin-bottom: 0;
+}
+.container {
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.font-m {
+  font-size: 1.25em; //20
+}
+.font-lg {
+  font-size: 2rem; //32
+}
