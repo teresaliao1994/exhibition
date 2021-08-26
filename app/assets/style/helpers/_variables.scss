@@ -252,7 +252,9 @@ $spacers: (
   2x: $spacer * 0.625,
   //10
     3: $spacer * 0.75,
-  4: $spacer,
+  3x: $spacer * 0.875,
+  //14
+    4: $spacer,
   4x: $spacer * 1.125,
   //18
     5: $spacer * 1.25,
@@ -440,6 +442,7 @@ $font-size-lg: $font-size-base * 1.25 !default;
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default; //新增
 $font-weight-bold: 700 !default;
 $font-weight-bolder: bolder !default;
 
@@ -1086,8 +1089,8 @@ $pagination-border-radius-lg: $border-radius-lg !default;
 $card-spacer-y: $spacer !default;
 $card-spacer-x: $spacer !default;
 $card-title-spacer-y: $spacer * 0.5 !default;
-$card-border-width: $border-width !default;
-$card-border-radius: $border-radius !default;
+$card-border-width: 0; //$border-width !default;
+$card-border-radius: 0; //$border-radius !default;
 $card-border-color: rgba($black, 0.125) !default;
 $card-inner-border-radius: subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y: $card-spacer-y * 0.5 !default;

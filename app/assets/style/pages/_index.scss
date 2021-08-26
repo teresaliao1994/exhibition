@@ -1,5 +1,6 @@
 .indexBanner {
-  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
+  //background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
+  background: url("../../../assets/images/ricardo-gomez-angel-UrOZTfXT0h0-unsplash\ \(1\).jpeg");
   background-position: center;
   background-size: cover;
   height: 480px;
@@ -15,6 +16,22 @@
     @include media-breakpoint-up(md) {
       button {
         width: fit-content;
+      }
+    }
+  }
+}
+.hot {
+  .card {
+    img {
+      height: 345px;
+      @include media-breakpoint-up(md) {
+        height: 350px;
+      }
+    }
+    .card-info {
+      font-size: 1rem;
+      @include media-breakpoint-up(md) {
+        font-size: 1.25rem;
       }
     }
   }

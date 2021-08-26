@@ -19,35 +19,36 @@
 
 <body>
   <nav class="px-0 py-4x py-md-7 border border-dark navbar navbar-light navbar-expand-md ">
-    <div class="container position-relative">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container position-relative flex-md-row-reverse">
+      <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="#" class="brand text-primary">
-        <h1>EXHIBINECTION</h1>
+      <a href="index.html" class="brand text-primary">
+        <h1 class="font-l">EXHIBINECTION</h1>
       </a>
-      <div class="collapse navbar-collapse text-dark" id="navbarTogglerDemo03">
-        <ul class="navbar-nav ms-auto mb-2 mb-md-0 me-8">
-          <li class="nav-item">
-            <a class="text-link me-8" href="#">Sign in</a>
-          </li>
-          <li class="nav-item">
-            <a class="text-link" href="#">Sign up</a>
-          </li>
-        </ul>
-      </div>
       <a href="#" class="position-relative">
         <span class="icon-confirmation material-icons text-black">confirmation_number</span>
         <span class="bg-secondary number text-white rounded-pill">3</span>
       </a>
+      <div class="collapse navbar-collapse text-dark" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0 me-8">
+          <li class="nav-item">
+            <a class="nav-link me-md-8 p-md-0 py-2 text-dark" href="#">Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-md-0 py-2 text-dark" href="#">Sign up</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <%- contents %>
 
   <footer class="footer">
-    footer
+    foo
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
