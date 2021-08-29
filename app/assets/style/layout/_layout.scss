@@ -23,6 +23,28 @@
   }
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: 100%;
+  }
+  @include media-breakpoint-up(md) {
+    width: 350px !important;
+  }
+}
+.swiper-slide img {
+  width: 100%;
+  height: 350px;
+  display: block;
+  object-fit: cover;
+}
+
 .subscribe {
   background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true");
   background-size: cover;

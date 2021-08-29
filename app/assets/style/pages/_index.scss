@@ -20,7 +20,7 @@
     }
   }
 }
-.hot {
+.indexExhibition {
   .card-bg {
     background-color: $light;
     @include media-breakpoint-up(md) {
@@ -50,26 +50,4 @@
     background-position: center;
     background-size: cover;
   }
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .card {
-    width: 100%;
-  }
-  @include media-breakpoint-up(md) {
-    width: 350px !important;
-  }
-}
-.swiper-slide img {
-  width: 100%;
-  height: 350px;
-  display: block;
-  object-fit: cover;
 }

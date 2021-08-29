@@ -8,9 +8,8 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: true,
+  keyboard: {
+    enabled: true,
   },
   breakpoints: {
     768: {
