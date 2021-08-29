@@ -5,6 +5,9 @@
   font-size: 1.5rem; //24
 }
 .font-xl {
+  font-size: 1.75rem; //28
+}
+.font-xxl {
   font-size: 2rem; //32
 }
 .fw-medium {
@@ -13,4 +16,15 @@
 .px-15 {
   padding-right: 15px;
   padding-left: 15px;
+}
+.w-md-75 {
+  @include media-breakpoint-up(md) {
+    width: 75%;
+  }
+}
+
+.font-md-l {
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+  }
 }

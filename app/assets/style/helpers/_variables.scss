@@ -67,29 +67,35 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: $blue !default;
-$secondary: $gray-600 !default;
+$primary: #630834; //$blue !default;
+$primary-dark: #190014cc; //new
+$secondary: #e31277; //$gray-600 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
-$light: $gray-100 !default;
-$dark: $gray-900 !default;
+$light: #efefef; //$gray-100 !default;
+$dark: #707070; //$gray-900 !default;
+$white: #fff; //new
+$black: #000; //new
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary": #630834,
-  "primary-dark": #190014cc,
-  "secondary": #e31277,
+  "primary": $primary,
+  "primary-dark": $primary-dark,
+  //new
+    "secondary": $secondary,
   "success": $success,
   "info": $info,
   "warning": $warning,
   "danger": $danger,
-  "light": #efefef,
-  "dark": #707070,
-  "black": black,
-  "white": white,
+  "light": $light,
+  "dark": $dark,
+  "black": $black,
+  //new
+    "white": $white,
+  //new
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -258,15 +264,20 @@ $spacers: (
   4x: $spacer * 1.125,
   //18
     5: $spacer * 1.25,
-  6: $spacer * 1.5,
+  5x: $spacer * 1.375,
+  //22
+    6: $spacer * 1.5,
   7: $spacer * 1.75,
   8: $spacer * 2,
   9: $spacer * 2.25,
-  10: $spacer * 3,
+  9x: $spacer * 2.375,
+  //38
+    10: $spacer * 2.5,
+  11: $spacer * 3,
   //48
-    11: $spacer * 3.25,
+    12: $spacer * 3.25,
   //52
-    12: $spacer * 3.75,
+    13: $spacer * 3.75,
   //60
 ) !default;
 
@@ -352,7 +363,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12 !default;
-$grid-gutter-width: 1.5rem !default;
+$grid-gutter-width: 1.875rem; //1.5rem !default;
 $grid-row-columns: 6 !default;
 
 $gutters: $spacers !default;
@@ -442,7 +453,7 @@ $font-size-lg: $font-size-base * 1.25 !default;
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
-$font-weight-medium: 500 !default; //新增
+$font-weight-medium: 500 !default; //new
 $font-weight-bold: 700 !default;
 $font-weight-bolder: bolder !default;
 
@@ -1086,8 +1097,8 @@ $pagination-border-radius-lg: $border-radius-lg !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y: $spacer !default;
-$card-spacer-x: $spacer !default;
+$card-spacer-y: 0; //$spacer !default; //上下沒有間距
+$card-spacer-x: 0; //$spacer !default;//左右沒有間距
 $card-title-spacer-y: $spacer * 0.5 !default;
 $card-border-width: 0; //$border-width !default;
 $card-border-radius: 0; //$border-radius !default;

@@ -21,11 +21,18 @@
   }
 }
 .hot {
+  .card-bg {
+    background-color: $light;
+    @include media-breakpoint-up(md) {
+      background-color: white;
+    }
+  }
   .card {
     img {
-      height: 345px;
+      height: 350px;
       @include media-breakpoint-up(md) {
-        height: 350px;
+        min-height: 350px;
+        height: 100%;
       }
     }
     .card-info {
@@ -35,4 +42,34 @@
       }
     }
   }
+}
+
+.review {
+  .review__bg {
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: 100%;
+  }
+  @include media-breakpoint-up(md) {
+    width: 350px !important;
+  }
+}
+.swiper-slide img {
+  width: 100%;
+  height: 350px;
+  display: block;
+  object-fit: cover;
 }
