@@ -7,10 +7,10 @@ AOS.init({
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 0,
-  loop: true,
   keyboard: {
     enabled: true,
   },
+  grabCursor: true,
   breakpoints: {
     768: {
       slidesPerView: 3,

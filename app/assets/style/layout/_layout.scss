@@ -1,4 +1,5 @@
 .navbar {
+  z-index: 1051;
   .brand {
     h1 {
       line-height: 1;
@@ -23,6 +24,15 @@
   }
 }
 
+.offcanvas {
+  justify-content: space-between;
+  width: 100%;
+  top: 67px;
+  @include media-breakpoint-up(md) {
+    width: 540px;
+    top: 80px;
+  }
+}
 .swiper {
   width: 100%;
   height: 100%;
