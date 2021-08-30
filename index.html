@@ -1,114 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exhibition Index</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+<body>
+  <nav class="w-100 px-0 py-4x py-md-7 border-bottom border-dark navbar navbar-light navbar-expand-md bg-white">
+    <div class="container position-relative flex-md-row-reverse">
+      <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="index.html" class="brand text-primary">
+        <h1 class="font-l">EXHIBINECTION</h1>
+      </a>
+      <a href="#" class="position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <span class="icon-confirmation material-icons text-black">confirmation_number</span>
+        <span class="bg-secondary number text-white rounded-pill">3</span>
+      </a>
+      <div class="collapse navbar-collapse text-dark" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0 me-8">
+          <li class="nav-item">
+            <a class="nav-link me-md-8 p-md-0 py-2 text-dark" href="#">Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-md-0 py-2 text-dark" href="#">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end bg-black text-white px-md-8 px-15 " tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header p-0 mt-md-8 mt-5 mb-3">
+      <h5 id="offcanvasRightLabel" class="font-l fw-bold">Cart List</h5>
+    </div>
+    <div class="offcanvas-body p-0">
+      <ul>
+        <li class="card text-black mb-2 mb-md-3">
+          <a href="#" class="ps-1 pt-1 link-black mb-2 mb-md-0 d-flex align-items-center" aria-label="Close">
+            <span class="material-icons-outlined">close</span>
+          </a>
+          <div class="d-flex pb-md-6 pb-4 px-md-8 px-4 justify-content-between align-items-center">
+            <div class="d-flex">
+              <img src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpeg" alt="">
+              <div class="ms-4 d-flex flex-column ">
+                <h5 class="mb-1 fw-bold">2020 台味設計展</h5>
+                <p class="mb-1 fw-medium">01 JUN — 31 OCT</p>
+                <p class="text-dark">全票</p>
+                <p class="mt-auto fw-bold font-m">NT$350</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row align-items-center">
+              <a href="#" class="text-black order-md-last d-flex align-items-center"><span
+                  class="material-icons">add</span></a>
+              <span class="fw-bold font-m mx-md-3 my-md-0 my-1">01</span>
+              <a href="#" class="text-black order-md-first d-flex align-items-center"><span
+                  class="material-icons">remove</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="card text-black mb-2 mb-md-3">
+          <a href="#" class="ps-1 pt-1 link-black mb-2 mb-md-0 d-flex align-items-center" aria-label="Close">
+            <span class="material-icons-outlined">close</span>
+          </a>
+          <div class="d-flex pb-md-6 pb-4 px-md-8 px-4 justify-content-between align-items-center">
+            <div class="d-flex">
+              <img src="assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpeg" alt="">
+              <div class="ms-4 d-flex flex-column ">
+                <h5 class="mb-1 fw-bold">2020 台味設計展</h5>
+                <p class="mb-1 fw-medium">01 JUN — 31 OCT</p>
+                <p class="text-dark">全票</p>
+                <p class="mt-auto fw-bold font-m">NT$350</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row align-items-center">
+              <a href="#" class="text-black order-md-last d-flex align-items-center"><span
+                  class="material-icons">add</span></a>
+              <span class="fw-bold font-m mx-md-3 my-md-0 my-1">01</span>
+              <a href="#" class="text-black order-md-first d-flex align-items-center"><span
+                  class="material-icons">remove</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="card text-black mb-2 mb-md-3">
+          <a href="#" class="ps-1 pt-1 link-black mb-2 mb-md-0 d-flex align-items-center" aria-label="Close">
+            <span class="material-icons-outlined">close</span>
+          </a>
+          <div class="d-flex pb-md-6 pb-4 px-md-8 px-4 justify-content-between align-items-center">
+            <div class="d-flex">
+              <img src="assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpeg" alt="">
+              <div class="ms-4 d-flex flex-column ">
+                <h5 class="mb-1 fw-bold">2020 台味設計展</h5>
+                <p class="mb-1 fw-medium">01 JUN — 31 OCT</p>
+                <p class="text-dark">全票</p>
+                <p class="mt-auto fw-bold font-m">NT$350</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row align-items-center">
+              <a href="#" class="text-black order-md-last d-flex align-items-center"><span
+                  class="material-icons">add</span></a>
+              <span class="fw-bold font-m mx-md-3 my-md-0 my-1">01</span>
+              <a href="#" class="text-black order-md-first d-flex align-items-center"><span
+                  class="material-icons">remove</span></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="py-4 d-flex align-items-center justify-content-between">
+      <p class="font-m fw-medium">
+        <span class="me-4">小計</span>NT$1050
+      </p>
+      <button class="btn btn-white text-primary py-2x px-7">前往結帳</button>
+    </div>
+  </div>
+
+  
+<div class="indexBanner d-flex align-items-end align-items-md-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-11 offset-md-1">
+        <h2 class="fw-bold font-xxl text-white mb-2">台北當代藝術展</h2>
+        <p class="fw-bold font-m text-white mb-4">01 JUN - 31 OCT</p>
+        <div class="indexBanner__button d-flex justify-content-between justify-content-md-start">
+          <button type="button" class="btn btn-secondary me-md-2 py-2x px-md-11">購買票券</button>
+          <button type="button" class="btn btn-outline-light py-2x px-md-11">詳細資訊</button>
         </div>
-      </div>
-    </nav>
-
-    
-<div class="container">
-  <h1 class="index__h1 text-dark2">這是一段話</h1>
-  <a href="＃" class="btn btn-dark2">按鈕</a>
-  <a href="">連結</a>
-  <div class="alert alert-dark2" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
 
-    <footer class="footer">
-      footer
-    </footer>
+<nav class="menu border-bottom border-dark mb-5 mb-md-13">
+  <ul class="menu-list d-flex justify-content-md-center align-items-center">
+    <li class="me-4x">
+      <a href="#" class="px-4x pt-0 pb-1">音樂</a>
+    </li>
+    <li class="me-4x">
+      <a href="" class="px-4x pt-0 pb-1">戲劇</a>
+    </li>
+    <li class="me-4x">
+      <a href="design.html" class="px-4x pt-0 pb-1">設計</a>
+    </li>
+    <li class="me-4x">
+      <a href="" class="px-4x pt-0 pb-1">藝術</a>
+    </li>
+    <li class="me-4x">
+      <a href="" class="px-4x pt-0 pb-1">美食</a>
+    </li>
+    <li class="me-4x">
+      <a href="" class="px-4x pt-0 pb-1">旅遊</a>
+    </li>
+    <li class="me-4x">
+      <a href="" class="px-4x pt-0 pb-1">電影</a>
+    </li>
+    <li class="me-4x">
+      <a href="" class="px-4x pt-0 pb-1">親子</a>
+    </li>
+    <li class="">
+      <a href="" class="px-4x pt-0 pb-1">期間限定</a>
+    </li>
+  </ul>
+</nav>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+<div class="indexExhibition mb-6 mb-md-13">
+  <div class="container">
+    <h3 class="font-xxl fw-bold mb-2 mb-md-6">熱門特展</h3>
+  </div>
+  <ul>
+    <li class="container card-bg mb-4 mb-md-5">
+      <div class="card bg-light py-6 p-md-0">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpeg" alt="">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body h-100 pt-2 px-md-6 py-md-11 d-flex justify-content-between">
+              <div class="card-main w-md-75 d-flex flex-column justify-content-between">
+                <div class="card-content">
+                  <div class="d-flex align-items-center mb-1 justify-content-between">
+                    <div class="d-flex align-items-center ">
+                      <h4 class="fw-bold font-m me-2">2020 台味設計展</h4>
+                      <a href="#" class="text-black d-md-none"><i class="font-l fab fa-facebook"></i></a>
+                    </div>
+                    <p class="fw-medium d-md-none">01 JUN — 31 OCT</p>
+                  </div>
+                  <p class="mb-2 font-m">$350</p>
+                  <p class="fw-medium mb-5 card-info">
+                    一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+                </div>
+                <div class="card-button">
+                  <a href="#" class="btn btn-primary me-1 me-md-2 py-2x px-4">購買票券</a>
+                  <a href="#" class="btn btn-outline-primary py-2x px-4">收藏展覽</a>
+                </div>
+              </div>
+              <div class="card-side d-none d-md-flex flex-column justify-content-between">
+                <p class="fw-medium font-m">01<br>JUN<br>|<br>31<br>OCT</p>
+                <a href="#" class="text-black"><i class="font-l fab fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </li>
+    <li class="container card-bg mb-4 mb-md-5">
+      <div class="card bg-light py-6 p-md-0">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+              alt="">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body h-100 pt-2 px-md-6 py-md-11 d-flex justify-content-between">
+              <div class="card-main w-md-75 d-flex flex-column justify-content-between">
+                <div class="card-content">
+                  <div class="d-flex align-items-center mb-1 justify-content-between">
+                    <div class="d-flex align-items-center ">
+                      <h4 class="fw-bold font-m me-2">2020 台味設計展</h4>
+                      <a href="#" class="text-black d-md-none"><i class="font-l fab fa-facebook"></i></a>
+                    </div>
+                    <p class="fw-medium d-md-none">01 JUN — 31 OCT</p>
+                  </div>
+                  <p class="mb-2 font-m">$350</p>
+                  <p class="fw-medium mb-5 card-info">
+                    一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+                </div>
+                <div class="card-button">
+                  <a href="#" class="btn btn-primary me-1 me-md-2 py-2x px-4">購買票券</a>
+                  <a href="#" class="btn btn-outline-primary py-2x px-4">收藏展覽</a>
+                </div>
+              </div>
+              <div class="card-side d-none d-md-flex flex-column justify-content-between">
+                <p class="fw-medium font-m">01<br>JUN<br>|<br>31<br>OCT</p>
+                <a href="#" class="text-black"><i class="font-l fab fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </li>
+    <li class="container card-bg mb-4 mb-md-5">
+      <div class="card bg-light py-6 p-md-0">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true"
+              alt="">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body h-100 pt-2 px-md-6 py-md-11 d-flex justify-content-between">
+              <div class="card-main w-md-75 d-flex flex-column justify-content-between">
+                <div class="card-content">
+                  <div class="d-flex align-items-center mb-1 justify-content-between">
+                    <div class="d-flex align-items-center ">
+                      <h4 class="fw-bold font-m me-2">2020 台味設計展</h4>
+                      <a href="#" class="text-black d-md-none"><i class="font-l fab fa-facebook"></i></a>
+                    </div>
+                    <p class="fw-medium d-md-none">01 JUN — 31 OCT</p>
+                  </div>
+                  <p class="mb-2 font-m">$350</p>
+                  <p class="fw-medium mb-5 card-info">
+                    一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+                </div>
+                <div class="card-button">
+                  <a href="#" class="btn btn-primary me-1 me-md-2 py-2x px-4">購買票券</a>
+                  <a href="#" class="btn btn-outline-primary py-2x px-4">收藏展覽</a>
+                </div>
+              </div>
+              <div class="card-side d-none d-md-flex flex-column justify-content-between">
+                <p class="fw-medium font-m">01<br>JUN<br>|<br>31<br>OCT</p>
+                <a href="#" class="text-black"><i class="font-l fab fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="review mb-6 mb-md-13">
+  <div class="container">
+    <h3 class="font-xxl fw-bold mb-2 mb-md-6">直播回顧</h3>
+    <div class="review__bg">
+      <div class="col-md-5">
+        <div class="bg-primary-dark px-6 py-10">
+          <h4 class="font-xl mb-8 text-white"><span class="border-end border-white pe-3 me-3 fw-bold">開幕對談</span>藝術展演巡禮
+          </h4>
+          <img class="mb-3"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people.png"
+            alt="">
+          <p class="mb-2 text-white">臺北現代聯合總監｜Ken Hsu</p>
+          <p class="mb-4 text-white">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
+          <button type="button" class="btn btn-secondary py-2x px-9x">點此觀看</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="recommend mb-6 mb-md-13">
+    <div class="container">
+      <h3 class="font-xxl fw-bold mb-2 mb-md-6">猜你也喜歡...</h3>
+      <div class="row">
+        <div class="col-12 col-md-11 offset-md-1">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true"
+                    class="card-img-top" alt="">
+                  <div class="card-body pt-md-2 pt-1">
+                    <h5 class="font-m  fw-bold mb-1">No.22 線上設計展</h5>
+                    <p>$350</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
+                    class="card-img-top" alt="">
+                  <div class="card-body pt-md-2 pt-1">
+                    <h5 class="font-m  fw-bold mb-1">No.22 線上設計展</h5>
+                    <p>$350</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg?raw=true"
+                    class="card-img-top" alt="">
+                  <div class="card-body pt-md-2 pt-1">
+                    <h5 class="font-m  fw-bold mb-1">No.22 線上設計展</h5>
+                    <p>$350</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg?raw=true"
+                    class="card-img-top" alt="">
+                  <div class="card-body pt-md-2 pt-1">
+                    <h5 class="font-m  fw-bold mb-1">No.22 線上設計展</h5>
+                    <p>$350</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg?raw=true"
+                    class="card-img-top" alt="">
+                  <div class="card-body pt-md-2 pt-1">
+                    <h5 class="font-m  fw-bold mb-1">No.22 線上設計展</h5>
+                    <p>$350</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subscribe">
+    <div class="container py-9 h-100 d-flex align-items-end">
+      <div class="">
+        <h3 class="font-l text-white fw-bold mb-md-3 mb-5x">想收到最新消息嗎？<br>快訂閱我們！</h3>
+        <div class="input-group">
+          <input type="text" class="form-control border-0" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <button class="btn btn-secondary py-3 px-12 border-0" type="button" id="button-addon2">訂閱</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container py-4">
+      <div class="footer__nav d-flex flex-column flex-md-row align-items-sm-center">
+        <p class="font-m me-4">EXHIBINECTION</p>
+        <p>© 2020. All Rights Reserved.</p>
+        <ul class="d-none ms-auto d-md-flex">
+          <li>
+            <a class="me-md-8 p-md-0 py-2 text-dark" href="#">Sign in</a>
+          </li>
+          <li>
+            <a class="p-md-0 py-2 text-dark" href="#">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
 
 </html>
