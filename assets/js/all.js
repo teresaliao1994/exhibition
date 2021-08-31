@@ -2,7 +2,8 @@
 
 //Aos
 AOS.init({
-  once: true
+  once: true,
+  duration: 800
 }); //swipers
 
 var swiper = new Swiper(".mySwiper", {
